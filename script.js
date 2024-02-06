@@ -5,10 +5,10 @@ const links = document.querySelectorAll('.navbar-links li a');
 let swiper = createSwiper(".mySwiper", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev");
 let header = document.getElementById('header');
 
-function createSwiper(container, pagination, nextButton, prevButton){
+function createSwiper(container, pagination, nextButton, prevButton) {
     return new Swiper(container, {
-        slidesPerView:handleWidth(),
-        spaceBetween:30,
+        slidesPerView: handleWidth(),
+        spaceBetween: 30,
         pagination: {
             el: pagination,
             clickable: true,
@@ -31,20 +31,17 @@ function handleWidth() {
         slideShow = 1;
     }
     return slideShow;
-
 }
 
-
 menuHamburguer.addEventListener('click', () => {
-    nav.classList.toggle('active')
+    nav.classList.toggle('active');
 });
- 
-links.forEach(item =>{
+
+links.forEach(item => {
     item.addEventListener('click', () => {
-        nav.classList.toggle('active')
+        nav.classList.toggle('active');
     })
 });
-
 
 window.addEventListener('resize', () => {
     swiper.params.slidesPerView = handleWidth();
@@ -52,5 +49,10 @@ window.addEventListener('resize', () => {
 })
 
 window.addEventListener('scroll', () => {
- 
+  if (window.scrollY >= 200) {
+    header.style.background = '#191919'
+  } else {
+    header.style.background = 'transparent'
+}
+
 })
