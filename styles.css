@@ -316,11 +316,11 @@ body {
 .person-background {
     height: 100vh;
     width: 50%;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     position: relative;
-    flex-direction: column;
+    /*flex-direction: column;*/
     background-image: url(./img/photo-15.webp);
     background-size: cover;
     background-position: top center;
