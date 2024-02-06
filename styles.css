@@ -280,6 +280,9 @@ body {
     .stacks li img{
         width: calc(3.5 + .5rem);
     }
+    person-background {
+        width: 100%; /* Alterado para ocupar toda a largura da foto */
+    }
 }
 
 /*sm -> md */
