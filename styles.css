@@ -510,6 +510,9 @@ body {
     .box-about h4{
         margin:1rem;
     }
+     .person-background{
+         padding: 10px 20px;
+    }
  }
  @media (min-width: 376px) and (max-width: 768px){
     .box-about{
